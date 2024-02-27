@@ -1,0 +1,327 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background:rgb(24,20,20);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Roboto';
+}
+
+.navbar{
+    width: 100%;
+    padding-left: 40px;
+    height: 60px;
+    color: rgb(49,185,206);
+    background: rgb(19,18,18);
+}
+
+.brand{
+    height: 60px;
+    line-height: 60px;
+    letter-spacing: 1px;
+}
+
+.dashboard{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.parking-manager{
+    height: 100%;
+    background: rgb(25,25,25);
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.new-car-btn{
+    background: rgb(45,42,42);
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.new-car-entry{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 3px;
+}
+
+.new-car-entry div{
+    background: rgb(27,118,19);
+    width: 20%;
+    height: 20px;
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.parking-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50px;
+}
+
+.parking-slots-holder{
+    width: 80%;
+    height: 20%;
+    display: flex;
+}
+
+.parking-slot{
+    width: 20%;
+    height: 100%;
+    border-right: 2px solid rgb(24,20,20);
+    border-left: 2px solid rgb(24,20,20);
+    background: rgb(31,31,40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(240,240,236);
+}
+
+.parking-way{
+    width: 80%;
+    height: 20%;
+}
+
+#entry-way{
+    border-bottom: 2px dotted yellow;
+}
+
+.outside{
+    width: 200px;
+    height: 40%;
+    border-top: 2px solid rgb(33,74,113);
+    border-bottom: 2px solid rgb(33,74,113);
+    background: rgb(43,43,55);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.new-car-origin{
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: rotate(270deg);
+}
+
+.queue{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 3px;
+}
+
+.queue img{
+    background: rgb(3, 20, 30);
+    width: 20px;
+    padding: 10px;
+    text-align: center;
+    line-height: 20px;
+    border: 1px dotted gray;
+}
+
+.addtoqueue{
+    background: rgb(50, 49, 49);
+    color: rgb(49,185,206);
+    padding: 10px;
+    font-size: 12px;
+    margin: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgb(49,185,206);
+}
+
+.slot-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: green; /* Initially green */
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.parking-slot.occupied .slot-indicator {
+    background-color: red; /* Turn red when occupied */
+}
+
+.parking-space {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb1 {
+    position: absolute;
+    top: -50px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+
+  .parking-space2 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb2 {
+    position: absolute;
+    top: -50px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+  .parking-space3 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb3 {
+    position: absolute;
+    top: -50px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+  .parking-space4 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb4 {
+    position: absolute;
+    top: -50px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+  .parking-space5 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb5 {
+    position: absolute;
+    top: -50px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+
+  .parking-space6 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb6 {
+    position: absolute;
+    top: 130px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+
+  .parking-space7 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb7 {
+    position: absolute;
+    top: 130px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+
+  .parking-space8 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb8 {
+    position: absolute;
+    top: 130px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+
+  .parking-space9 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb9 {
+    position: absolute;
+    top: 130px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
+
+  .parking-space10 {
+    position: relative; /* Allow positioning of bulb relative to car */
+  }
+  
+  .bulb10 {
+    position: absolute;
+    top: 130px; /* Adjust based on car and bulb image dimensions */
+    left: 90px; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for bulb image dimensions */
+    width: 50px; /* Adjust for bulb image dimensions */
+    height: 50px; /* Adjust for bulb image dimensions */
+    border-radius: 50%; /* Make bulb circular */
+    background-color:green; 
+    /* Initial color, will be changed with JavaScript */
+  }
